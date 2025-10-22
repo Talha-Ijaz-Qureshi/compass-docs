@@ -198,13 +198,14 @@
     }
 
     :global(.documentation b) {
-        background-color: var(--cds-border-subtle);
-        padding: 0.2rem 0.5rem;
+        /* background-color: var(--cds-border-subtle); */
+        background-color: #78aaff28;
+        padding: 0.2rem 0.4rem;
         border-radius: 4px;
-        color: #78a9ff;
+        color: var(--cds-link-primary);
         font-family: "IBM Plex Mono", monospace;
         font-size: 0.9rem;
-        font-weight: 800;
+        font-weight: 500;
         display: inline;
         word-break: break-word;
     }

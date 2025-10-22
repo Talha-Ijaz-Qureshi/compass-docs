@@ -13,9 +13,9 @@
   
   // Initialize with default to prevent hydration issues
   $: topicTitle = $currentSource[0].topic;
-  const description = "A comprehensive guide for migrating to Linux Pop!_OS, covering installation, customization, and daily usage tips for beginners and advanced users.";
-  const keywords = "Linux, Pop!_OS, System76, Linux Migration, Linux Guide, Open Source, Linux Installation, Linux Tutorial";
-  const url = "https://linuxmigration.tech";
+  const description = "Compass Docs - A documentation renderer built with SvelteKit and Carbon Design System. Transform structured content into interactive documentation sites with theming, navigation, and a beautifully responsive and sleek design.";
+  const keywords = "Documentation, SvelteKit, Carbon Design System, JSON, Static Site Generator, Technical Writing, Developer Tools, Open Source, Documentation System";
+  const url = "https://talha-ijaz-qureshi.github.io/compass-docs";
   import { menuOpen } from "$lib/stores/menu";
   import {
 	blur,
@@ -77,35 +77,32 @@
   <title>{topicTitle}</title>
   <meta name="description" content={description} />
   <meta name="keywords" content={keywords} />
-  <meta name="author" content="Talha Ijaz" />
+  <meta name="author" content="Talha Ijaz Qureshi" />
   
   
   <!-- Open Graph -->
-  <meta property="og:title" content={`${topicTitle} | Compass Docs.`} />
+  <meta property="og:title" content={`${topicTitle} | Compass Docs`} />
   <meta property="og:description" content={description} />
   <meta property="og:type" content="website" />
   <meta property="og:url" content={url} />
-  <meta property="og:site_name" content="Linux Migration Compass" />
+  <meta property="og:site_name" content="Compass Docs" />
   
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={`${topicTitle} | Compass Docs.`} />
+  <meta name="twitter:title" content={`${topicTitle} | Compass Docs`} />
   <meta name="twitter:description" content={description} />
   
   <!-- Schema.org -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "TechArticle",
-      "headline": "Linux Migration Compass",
+      "@type": "SoftwareApplication",
+      "name": "Compass Docs",
+      "applicationCategory": "DeveloperApplication",
       "description": "${description}",
       "author": {
         "@type": "Person",
-        "name": "Talha Ijaz"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Linux Migration Compass"
+        "name": "Talha Ijaz Qureshi"
       }
     }
   </script>
@@ -170,66 +167,51 @@
     <footer class="footer">
       <div class="footer-content">
         <h1>{topicTitle}</h1>
-        <h2>Copyleft - {currentYear} Compass Docs. - Talha "tal" Ijaz</h2>
+        <h2>Copyleft {currentYear} • Compass Docs • Talha "tal" Ijaz</h2>
 
-        <div class="logo" class:hide={topicTitle !== "Linux Migration Compass"}>
+        <div class="logo">
           <Icon
-            icon="carbon:shuffle"
+            icon="carbon:doc"
             width="600"
             height="600"
             style="color: #78a9ff"
           />
         </div>
         <div class="lic">
-          <h3>About Compass Docs.</h3>
+          <h3>About Compass Docs</h3>
           <p>
-            The Compass Documentation system is an open-sourced, highly reactive content rendering system with a polished and sleek UI developed on SvelteKit. Clone <a href="https://github.com/Talha-Ijaz-Qureshi/compass-docs" target="_blank">My Github Repository</a> and create your own content. Feel free to open a pull request to contribute or report issues!
+            Compass Docs is an open-source documentation rendering system built with SvelteKit and Carbon Design System. It transforms JSON-structured content into interactive documentation sites with built-in theming, navigation, and responsive design. Clone the <a href="https://github.com/talha-ijaz-qureshi/compass-docs" target="_blank">repository</a> to create your own documentation, contribute improvements, or report issues.
             <a href="#search">Switch Pages</a>
           </p>
-          <!-- <p>
-            This program is distributed in the hope that it will be useful, but
-            WITHOUT ANY WARRANTY; without even the implied warranty of
-            MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
-            General Public License for more details.
-          </p> -->
-
         </div>
 
         <div class="lic two">
           <h3>GNU General Public License v3.0</h3>
           <p>
-            This work is licensed under the GNU General Public License v3.0. You
-            may copy, distribute and modify this work under the terms of the GNU
-            GPL version 3 or any later version.              <a
+            This work is licensed under the GNU General Public License v3.0. You may copy, distribute, and modify this work under GPL v3 or later. Any derivative work must also be GPL v3 licensed. <a
             href="https://www.gnu.org/licenses/gpl-3.0.en.html"
             target="_blank"
-            >For more information visit here</a
-          >
-
+            >Full license terms</a>
           </p>
-          <!-- <p>
-            This program is distributed in the hope that it will be useful, but
-            WITHOUT ANY WARRANTY; without even the implied warranty of
-            MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
-            General Public License for more details.
-          </p> -->
-
         </div>
 
         <div class="speshal">
           <div class="flexitem">
+
+            <!-- 
+            add your own icons here
             <Icon
-            icon="carbon:linux"
+            icon="carbon:document"
             width="32"
             height="32"
             style="color: #78a9ff"
           />
           <Icon
-            icon="carbon:earth-filled"
+            icon="carbon:code"
             width="32"
             height="32"
             style="color: #78a9ff"
-          />
+          /> -->
           </div>
           <div class="flexitem" style="">
             <a
@@ -258,7 +240,7 @@
             />
           </a>
           <a
-            href="https://github.com/Talha-Ijaz-Qureshi/linux-migration-compass"
+            href="https://github.com/talha-ijaz-qureshi/compass-docs"
             target="_blank"
             style="text-decoration:none;"
             rel="noopener noreferrer"

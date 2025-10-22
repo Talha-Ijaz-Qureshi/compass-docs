@@ -242,7 +242,7 @@ on:click={handleClick}
     position: fixed;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
