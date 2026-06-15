@@ -470,6 +470,9 @@
     .btnSlider{
       right: 1rem;
     }
+    .slideright {
+      transform: translateX(-520%);
+    }
   }
 
   @media (max-width: 1199px) {
@@ -508,9 +511,6 @@
       box-shadow: 1px 0 4px rgba(0, 0, 0, 0.1); */
 
     }
-    .slideright {
-    transform: translateX(-480%);
-  }
 
     .layout-container {
       flex-direction: column;
